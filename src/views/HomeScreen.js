@@ -17,10 +17,16 @@ export default class HomeScreen extends React.Component {
     render() {
       const {navigate} = this.props.navigation;
       return (
-        <Button
-          title="Go to Jane's profile"
-          onPress={() => navigate('Profile', {name: 'Jane'})}
-        />
+          <View>
+            <Button
+            title="Go to Jane's profile"
+            onPress={() => navigate('Profile', {name: 'Jane'})}
+            />
+            <Button
+            title="Main"
+            onPress={() => navigate('MainMenu', {name: 'Jane'})}
+            />
+          </View>
       );
     }
   }
