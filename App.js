@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  Button,
 } from 'react-native';
 
 import {
@@ -23,6 +24,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+// import MainManu from "./src/views/MainMenuView"
 
 const App = () => {
   return (
@@ -39,6 +42,7 @@ const App = () => {
             </View>
           )}
           <View style={styles.body}>
+            <Button title="Show Modal"/>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
