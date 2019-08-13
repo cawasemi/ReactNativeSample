@@ -20,6 +20,8 @@ RCT_EXPORT_MODULE(DummyNativeView);
 }
 */
 
+RCT_EXPORT_VIEW_PROPERTY(messageText, NSString)
+
 - (UIView *)view
 {
   UIView *baseView = [[UIView alloc] init];

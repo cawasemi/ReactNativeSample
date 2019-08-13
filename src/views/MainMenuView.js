@@ -24,7 +24,10 @@ export default class MainMenuView extends React.Component {
         return (
             <View>
                 <Text>Main Menu</Text>
-                <DummyView style={{height: 256, width: 256}}/>
+                <DummyView 
+                style={{height: 256, width: 256}}
+                messageText='ABC'
+                />
                 <Text>EOF</Text>
             </View>
         )
