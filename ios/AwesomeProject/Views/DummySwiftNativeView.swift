@@ -49,5 +49,6 @@ class DummySwiftNativeView: UIView {
     }
     addSubview(nibView)
     messageLabel?.text = _messageText as? String
+    nibView.backgroundColor = UIColor.cyan
   }
 }
