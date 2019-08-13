@@ -9,6 +9,8 @@ import {
   Modal,
 } from 'react-native';
 
+import DummyView from './DummyNative.ios';
+
 export default class MainMenuView extends React.Component {
     state = {
         modalVisible: false,
@@ -22,6 +24,8 @@ export default class MainMenuView extends React.Component {
         return (
             <View>
                 <Text>Main Menu</Text>
+                <DummyView style={{height: 256, width: 256}}/>
+                <Text>EOF</Text>
             </View>
         )
     }
